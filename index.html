@@ -1,726 +1,765 @@
-<<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- MASTER SEO & META TAGS -->
+    <title>Johan Jomet | CEO, Founder of JJ Coders & Tech Entrepreneur</title>
+    <meta name="description" content="Who is Johan Jomet? Discover the CEO, tech entrepreneur, and founder of JJ Coders from Kerala. Architecting AI, robotics, and the Beyond Memorization movement.">
+    <meta name="keywords" content="Johan Jomet, CEO, Founder, JJ, JJ Coders, Kerala, Entrepreneur, Who is Johan Jomet, AI Builder, Tech Innovator, Software Architecture, Beyond Memorization">
+    <meta name="author" content="Johan Jomet">
+    <meta name="theme-color" content="#020005">
+    
+    <!-- Canonical URL (Update this when you host it on your custom domain) -->
+    <link rel="canonical" href="https://johanjomet.com/" />
 
-  <style>
-    @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
-.about {
-  position: fixed;
-  z-index: 10;
-  bottom: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  transition: all 0.2s ease;
-}
-.about .bg_links {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 100%;
-  backdrop-filter: blur(5px);
-  position: absolute;
-}
-.about .logo {
-  width: 40px;
-  height: 40px;
-  z-index: 9;
-  background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 10px 7px;
-  opacity: 0.9;
-  transition: all 1s 0.2s ease;
-  bottom: 0;
-  right: 0;
-}
-.about .social {
-  opacity: 0;
-  right: 0;
-  bottom: 0;
-}
-.about .social .icon {
-  width: 100%;
-  height: 100%;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  display: flex;
-  transition: all 0.2s ease, background-color 0.4s ease;
-  opacity: 0;
-  border-radius: 100%;
-}
-.about .social.portfolio {
-  transition: all 0.8s ease;
-}
-.about .social.portfolio .icon {
-  background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
-}
-.about .social.dribbble {
-  transition: all 0.3s ease;
-}
-.about .social.dribbble .icon {
-  background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
-}
-.about .social.linkedin {
-  transition: all 0.8s ease;
-}
-.about .social.linkedin .icon {
-  background-image: url(https://rafaelavlucas.github.io/assets/codepen/linkedin.svg);
-}
-.about:hover {
-  width: 105px;
-  height: 105px;
-  transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
-}
-.about:hover .logo {
-  opacity: 1;
-  transition: all 0.6s ease;
-}
-.about:hover .social {
-  opacity: 1;
-}
-.about:hover .social .icon {
-  opacity: 0.9;
-}
-.about:hover .social:hover {
-  background-size: 28px;
-}
-.about:hover .social:hover .icon {
-  background-size: 65%;
-  opacity: 1;
-}
-.about:hover .social.portfolio {
-  right: 0;
-  bottom: calc(100% - 40px);
-  transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
-}
-.about:hover .social.portfolio .icon:hover {
-  background-color: #698fb7;
-}
-.about:hover .social.dribbble {
-  bottom: 45%;
-  right: 45%;
-  transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
-}
-.about:hover .social.dribbble .icon:hover {
-  background-color: #ea4c89;
-}
-.about:hover .social.linkedin {
-  bottom: 0;
-  right: calc(100% - 40px);
-  transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
-}
-.about:hover .social.linkedin .icon:hover {
-  background-color: #0077b5;
-}
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://johanjomet.com/">
+    <meta property="og:title" content="Johan Jomet | Tech Entrepreneur & CEO">
+    <meta property="og:description" content="Founder of JJ Coders based in Kerala. I build with a bigger purpose than just code. Discover my ventures, philosophy, and vision.">
+    <meta property="og:image" content="https://jjcoders.web.app/johan.png">
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-li,
-button,
-a,
-i,
-input,
-body {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border: 0;
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: none;
-  color: inherit;
-}
-h1:focus,
-h2:focus,
-h3:focus,
-h4:focus,
-h5:focus,
-h6:focus,
-p:focus,
-ul:focus,
-li:focus,
-button:focus,
-a:focus,
-i:focus,
-input:focus,
-body:focus {
-  outline: 0;
-}
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Johan Jomet | Tech Entrepreneur & CEO">
+    <meta name="twitter:description" content="Founder of JJ Coders based in Kerala. I build with a bigger purpose than just code. Discover my ventures, philosophy, and vision.">
+    <meta name="twitter:image" content="https://jjcoders.web.app/johan.png">
 
-body {
-  margin: 0;
-  padding: 0;
-  height: auto;
-  font-family: "Barlow", sans-serif;
-  background: #695681;
-}
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://jjcoders.web.app/johan.png">
+    <link rel="apple-touch-icon" href="https://jjcoders.web.app/johan.png">
 
-.logo {
-  position: fixed;
-  z-index: 5;
-  bottom: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
-  backdrop-filter: blur(5px);
-}
-.logo img {
-  width: 55%;
-  height: 55%;
-  transform: translateY(-1px);
-  opacity: 0.8;
-}
+    <!-- GOOGLE STRUCTURED DATA (JSON-LD) - Secret to ranking #1 for "Who is Johan Jomet" -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Johan Jomet",
+      "alternateName": "JJ",
+      "jobTitle": "CEO & Founder",
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "JJ Coders",
+          "url": "https://jjcoders.web.app"
+        },
+        {
+          "@type": "Organization",
+          "name": "Beyond Memorization",
+          "url": "https://beyondmemorization.web.app"
+        }
+      ],
+      "url": "https://johanjomet.com/",
+      "image": "https://jjcoders.web.app/johan.png",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Kuruppumbady, Kerala, India"
+      },
+      "description": "Johan Jomet is a tech entrepreneur, CEO of JJ Coders, AI Builder, and founder of the Beyond Memorization movement based in Kerala, India."
+    }
+    </script>
 
-nav .menu {
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  box-sizing: border-box;
-  z-index: 3;
-}
-nav .menu .website_name {
-  color: #695681;
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 1px;
-  background: white;
-  padding: 4px 8px;
-  border-radius: 2px;
-  opacity: 0.5;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-nav .menu .website_name:hover {
-  opacity: 1;
-}
-nav .menu .menu_links {
-  transition: all 0.4s ease;
-  opacity: 0.5;
-}
-nav .menu .menu_links:hover {
-  opacity: 1;
-}
-@media screen and (max-width: 799px) {
-  nav .menu .menu_links {
-    display: none;
-  }
-}
-nav .menu .menu_links .link {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-right: 50px;
-  letter-spacing: 2px;
-  position: relative;
-  transition: all 0.3s 0.2s ease;
-}
-nav .menu .menu_links .link:last-child {
-  margin-right: 0;
-}
-nav .menu .menu_links .link:before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 4px;
-  background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);
-  bottom: -10px;
-  border-radius: 4px;
-  transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
-  left: 100%;
-}
-nav .menu .menu_links .link:hover {
-  opacity: 1;
-  color: #FB8A8A;
-}
-nav .menu .menu_links .link:hover:before {
-  width: 40px;
-  left: 0;
-}
-nav .menu .menu_icon {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-@media screen and (max-width: 799px) {
-  nav .menu .menu_icon {
-    display: flex;
-  }
-}
-nav .menu .menu_icon .icon {
-  width: 24px;
-  height: 2px;
-  background: white;
-  position: absolute;
-}
-nav .menu .menu_icon .icon:before, nav .menu .menu_icon .icon:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  position: absolute;
-  transition: all 0.3s cubic-bezier(0.49, 0.04, 0, 1.55);
-}
-nav .menu .menu_icon .icon:before {
-  transform: translateY(-8px);
-}
-nav .menu .menu_icon .icon:after {
-  transform: translateY(8px);
-}
-nav .menu .menu_icon:hover .icon {
-  background: #FFEDC0;
-}
-nav .menu .menu_icon:hover .icon:before {
-  transform: translateY(-10px);
-}
-nav .menu .menu_icon:hover .icon:after {
-  transform: translateY(10px);
-}
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Core Engine Libraries -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow-x: hidden;
-}
-.wrapper .container {
-  margin: 0 auto;
-  transition: all 0.4s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.wrapper .container .scene {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  vertical-align: middle;
-}
-.wrapper .container .one,
-.wrapper .container .two,
-.wrapper .container .three,
-.wrapper .container .circle,
-.wrapper .container .p404 {
-  width: 60%;
-  height: 60%;
-  top: 20% !important;
-  left: 20% !important;
-  min-width: 400px;
-  min-height: 400px;
-}
-.wrapper .container .one .content,
-.wrapper .container .two .content,
-.wrapper .container .three .content,
-.wrapper .container .circle .content,
-.wrapper .container .p404 .content {
-  width: 600px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-}
-@keyframes content {
-  0% {
-    width: 0;
-  }
-}
-.wrapper .container .one .content .piece,
-.wrapper .container .two .content .piece,
-.wrapper .container .three .content .piece,
-.wrapper .container .circle .content .piece,
-.wrapper .container .p404 .content .piece {
-  width: 200px;
-  height: 80px;
-  display: flex;
-  position: absolute;
-  border-radius: 80px;
-  z-index: 1;
-  animation: pieceLeft 8s cubic-bezier(1, 0.06, 0.25, 1) infinite both;
-}
-@keyframes pieceLeft {
-  50% {
-    left: 80%;
-    width: 10%;
-  }
-}
-@keyframes pieceRight {
-  50% {
-    right: 80%;
-    width: 10%;
-  }
-}
-@media screen and (max-width: 799px) {
-  .wrapper .container .one,
-.wrapper .container .two,
-.wrapper .container .three,
-.wrapper .container .circle,
-.wrapper .container .p404 {
-    width: 90%;
-    height: 90%;
-    top: 5% !important;
-    left: 5% !important;
-    min-width: 280px;
-    min-height: 280px;
-  }
-}
-@media screen and (max-height: 660px) {
-  .wrapper .container .one,
-.wrapper .container .two,
-.wrapper .container .three,
-.wrapper .container .circle,
-.wrapper .container .p404 {
-    min-width: 280px;
-    min-height: 280px;
-    width: 60%;
-    height: 60%;
-    top: 20% !important;
-    left: 20% !important;
-  }
-}
-.wrapper .container .text {
-  width: 60%;
-  height: 40%;
-  min-width: 400px;
-  min-height: 500px;
-  position: absolute;
-  margin: 40px 0;
-  animation: text 0.6s 1.8s ease backwards;
-}
-@keyframes text {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-}
-@media screen and (max-width: 799px) {
-  .wrapper .container .text {
-    min-height: 400px;
-    height: 80%;
-  }
-}
-.wrapper .container .text article {
-  width: 400px;
-  position: absolute;
-  bottom: 0;
-  z-index: 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@media screen and (max-width: 799px) {
-  .wrapper .container .text article {
-    width: 100%;
-  }
-}
-.wrapper .container .text article p {
-  color: white;
-  font-size: 18px;
-  letter-spacing: 0.6px;
-  margin-bottom: 40px;
-  text-shadow: 6px 6px 10px #32243E;
-}
-.wrapper .container .text article button {
-  height: 40px;
-  padding: 0 30px;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0px 15px 20px rgba(54, 24, 79, 0.5);
-  z-index: 3;
-  color: #695681;
-  background-color: white;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  transition: all 0.3s ease;
-}
-.wrapper .container .text article button:hover {
-  box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);
-  transform: translateY(5px);
-  background: #FB8A8A;
-  color: white;
-}
-.wrapper .container .p404 {
-  font-size: 200px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  color: white;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 2;
-  animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
-  animation-delay: 1.2s;
-}
-@media screen and (max-width: 799px) {
-  .wrapper .container .p404 {
-    font-size: 100px;
-  }
-}
-@keyframes anime404 {
-  0% {
-    opacity: 0;
-    transform: scale(10) skew(20deg, 20deg);
-  }
-}
-.wrapper .container .p404:nth-of-type(2) {
-  color: #36184F;
-  z-index: 1;
-  animation-delay: 1s;
-  filter: blur(10px);
-  opacity: 0.8;
-}
-.wrapper .container .circle {
-  position: absolute;
-}
-.wrapper .container .circle:before {
-  content: "";
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  background-color: rgba(54, 24, 79, 0.2);
-  border-radius: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);
-  animation: circle 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-}
-@keyframes circle {
-  0% {
-    width: 0;
-    height: 0;
-  }
-}
-@media screen and (max-width: 799px) {
-  .wrapper .container .circle:before {
-    width: 400px;
-    height: 400px;
-  }
-}
-.wrapper .container .one .content:before {
-  content: "";
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background-color: rgba(54, 24, 79, 0.3);
-  border-radius: 100%;
-  box-shadow: inset 5px 20px 40px rgba(54, 24, 79, 0.25), inset 5px 0px 5px rgba(50, 36, 62, 0.3), inset 5px 5px 20px rgba(50, 36, 62, 0.25), 2px 2px 5px rgba(255, 255, 255, 0.2);
-  animation: circle 0.8s 0.4s cubic-bezier(1, 0.06, 0.25, 1) backwards;
-}
-@media screen and (max-width: 799px) {
-  .wrapper .container .one .content:before {
-    width: 300px;
-    height: 300px;
-  }
-}
-.wrapper .container .one .content .piece {
-  background: linear-gradient(90deg, #8077EA 13.7%, #EB73FF 94.65%);
-}
-.wrapper .container .one .content .piece:nth-child(1) {
-  right: 15%;
-  top: 18%;
-  height: 30px;
-  width: 120px;
-  animation-delay: 0.5s;
-  animation-name: pieceRight;
-}
-.wrapper .container .one .content .piece:nth-child(2) {
-  left: 15%;
-  top: 45%;
-  width: 150px;
-  height: 50px;
-  animation-delay: 1s;
-  animation-name: pieceLeft;
-}
-.wrapper .container .one .content .piece:nth-child(3) {
-  left: 10%;
-  top: 75%;
-  height: 20px;
-  width: 70px;
-  animation-delay: 1.5s;
-  animation-name: pieceLeft;
-}
-.wrapper .container .two .content .piece {
-  background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);
-}
-.wrapper .container .two .content .piece:nth-child(1) {
-  left: 0%;
-  top: 25%;
-  height: 40px;
-  width: 120px;
-  animation-delay: 2s;
-  animation-name: pieceLeft;
-}
-.wrapper .container .two .content .piece:nth-child(2) {
-  right: 15%;
-  top: 35%;
-  width: 180px;
-  height: 50px;
-  animation-delay: 2.5s;
-  animation-name: pieceRight;
-}
-.wrapper .container .two .content .piece:nth-child(3) {
-  right: 10%;
-  top: 80%;
-  height: 20px;
-  width: 160px;
-  animation-delay: 3s;
-  animation-name: pieceRight;
-}
-.wrapper .container .three .content .piece {
-  background: #FB8A8A;
-}
-.wrapper .container .three .content .piece:nth-child(1) {
-  left: 25%;
-  top: 35%;
-  height: 20px;
-  width: 80px;
-  animation-name: pieceLeft;
-  animation-delay: 3.5s;
-}
-.wrapper .container .three .content .piece:nth-child(2) {
-  right: 10%;
-  top: 55%;
-  width: 140px;
-  height: 40px;
-  animation-name: pieceRight;
-  animation-delay: 4s;
-}
-.wrapper .container .three .content .piece:nth-child(3) {
-  left: 40%;
-  top: 68%;
-  height: 20px;
-  width: 80px;
-  animation-name: pieceLeft;
-  animation-delay: 4.5s;
-}
-  </style>
+    <style>
+        /* Base Cinematic Setup */
+        :root {
+            --bg-dark: #020005;
+            --accent-cyan: #00f2fe;
+            --accent-purple: #7000ff;
+            --accent-magenta: #ff0055;
+            --whatsapp: #25D366;
+            --whatsapp-dark: #128C7E;
+            --text-main: #ffffff;
+        }
+
+        html { background-color: var(--bg-dark); }
+        
+        body {
+            margin: 0; padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection { background: var(--accent-magenta); color: white; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent-cyan); }
+
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+
+        /* Cinematic Film Grain Overlay */
+        .noise-overlay {
+            position: fixed; inset: 0; z-index: 9999;
+            pointer-events: none; opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* 3D WebGL Canvas */
+        #webgl-container {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1; pointer-events: none;
+            background: radial-gradient(circle at center, #0a001a 0%, #020005 100%);
+        }
+
+        /* Text Effects */
+        .text-glow { text-shadow: 0 0 40px rgba(0, 242, 254, 0.5); }
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 50%, var(--accent-magenta) 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+
+        /* Full Color 3D Image Card */
+        .tilt-card-wrapper { perspective: 1000px; transform-style: preserve-3d; }
+        .tilt-card {
+            position: relative; transform-style: preserve-3d;
+            transition: transform 0.1s ease; will-change: transform;
+            border-radius: 50%; /* Make it round like the user requested */
+            border: 2px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.02);
+            width: 100%; max-width: 500px; aspect-ratio: 1/1; margin: 0 auto;
+        }
+        .tilt-card::before {
+            content: ''; position: absolute; inset: -5px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple), var(--accent-magenta));
+            border-radius: 50%; z-index: -1; opacity: 0;
+            transition: opacity 0.4s ease; filter: blur(25px);
+        }
+        .tilt-card:hover::before { opacity: 0.8; }
+        .tilt-image-container {
+            position: relative; border-radius: 50%; overflow: hidden;
+            transform: translateZ(40px); /* Massive 3D Pop */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            width: 100%; height: 100%;
+        }
+        .tilt-image-container img {
+            width: 100%; height: 100%; object-fit: cover;
+            /* FULL COLOR - NO GRAYSCALE */
+            filter: contrast(1.15) saturate(1.2); 
+            transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .tilt-card:hover img { transform: scale(1.08); }
+
+        /* Typographic Scrubbing */
+        .scrub-text span {
+            color: rgba(255, 255, 255, 0.1);
+            transition: color 0.2s ease, text-shadow 0.2s ease;
+        }
+        .scrub-text span.highlight {
+            color: #ffffff;
+            text-shadow: 0 0 25px rgba(0, 242, 254, 0.6);
+        }
+
+        /* Quotes Marquee */
+        .marquee-container {
+            display: flex;
+            width: max-content;
+            animation: scroll-left 40s linear infinite;
+        }
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .quote-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem 3rem;
+            width: 500px;
+            margin-right: 2rem;
+            white-space: normal;
+        }
+
+        /* Horizontal Scroll Timeline */
+        .timeline-container {
+            width: 400vw; /* 4 panels wide */
+            height: 100vh;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .timeline-panel {
+            width: 100vw; height: 100vh;
+            display: flex; flex-direction: column; justify-content: center;
+            padding: 0 10vw; position: relative;
+        }
+
+        /* Bento Grid Video-like Items */
+        .bento-item {
+            background: rgba(20, 10, 30, 0.4);
+            backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 24px; padding: 2.5rem;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            position: relative; overflow: hidden;
+        }
+        .bento-item:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 242, 254, 0.15);
+        }
+
+        /* Buttons */
+        .btn-cinematic {
+            position: relative; display: inline-flex; align-items: center; justify-content: center;
+            padding: 1.25rem 3rem; border-radius: 50px;
+            font-family: 'Space Grotesk', sans-serif; font-weight: 800; text-transform: uppercase;
+            letter-spacing: 0.1em; font-size: 0.875rem; border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.03); backdrop-filter: blur(10px);
+            color: white; overflow: hidden; z-index: 1; transition: all 0.4s ease;
+            text-align: center;
+        }
+        .btn-cinematic::before {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+            z-index: -1; transform: scaleX(0); transform-origin: right;
+            transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .btn-cinematic:hover::before { transform: scaleX(1); transform-origin: left; }
+        .btn-cinematic:hover { border-color: transparent; transform: translateY(-2px); }
+        
+        .btn-whatsapp { background: var(--whatsapp); border-color: transparent; }
+        .btn-whatsapp::before { background: linear-gradient(90deg, var(--whatsapp-dark), #075E54); }
+        .btn-whatsapp:hover { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); }
+
+        /* Floating WhatsApp Orb */
+        .fab-whatsapp {
+            position: fixed; bottom: 2rem; right: 2rem; z-index: 99;
+            background: var(--whatsapp); color: white;
+            width: 70px; height: 70px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .fab-whatsapp::after {
+            content: ''; position: absolute; inset: -5px; border-radius: 50%;
+            border: 2px solid var(--whatsapp); animation: ping 2s infinite;
+        }
+        .fab-whatsapp:hover { transform: scale(1.1) rotate(10deg); }
+        @keyframes ping { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(1.5); opacity: 0; } }
+
+        /* Venture Video Cards */
+        .venture-card {
+            border-radius: 2rem; overflow: hidden; height: 600px;
+            position: relative; border: 1px solid rgba(255,255,255,0.1);
+        }
+        .venture-bg {
+            position: absolute; inset: 0; background-size: cover; background-position: center;
+            transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .venture-card:hover .venture-bg { transform: scale(1.05); }
+        .venture-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(2,0,5,1) 0%, rgba(2,0,5,0.4) 50%, transparent 100%);
+        }
+    </style>
+</head>
 <body>
-<!-- about -->
-<div class="about">
-   <a class="bg_links social portfolio" href="https://www.rafaelalucas.com" target="_blank">
-      <span class="icon"></span>
-   </a>
-   <a class="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
-      <span class="icon"></span>
-   </a>
-   <a class="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
-      <span class="icon"></span>
-   </a>
-   <a class="bg_links logo"></a>
-</div>
-<!-- end about -->
 
-    <nav>
-        <div class="menu">
-            <p class="website_name">JJ coders</p>
-            <div class="menu_links">
-                <a href="https://jjcoders.web.app/#about" class="link">about</a>
-                <a href="https://jjcoders.web.app/#divisions" class="link">divisions</a>
-                <a href="https://jjcoders.web.app/#contact" class="link">contacts</a>
+    <div class="noise-overlay"></div>
+    <div id="webgl-container"></div>
+
+    <!-- WhatsApp Floating Action Button -->
+    <a href="https://wa.me/919446071043?text=Hi%20Johan,%20I'd%20like%20to%20collaborate." target="_blank" class="fab-whatsapp" title="Chat on WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 px-6 py-6 mix-blend-difference">
+        <div class="max-w-[1400px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4 cursor-pointer" onclick="window.scrollTo(0,0)">
+                <img src="https://jjcoders.web.app/johan.png" alt="Johan Jomet CEO" class="w-10 h-10 rounded-full border border-white/20 object-cover hidden sm:block">
+                <div class="font-display font-black text-2xl tracking-tighter text-white">JOHAN.</div>
             </div>
-            <div class="menu_icon">
-                <span class="icon"></span>
+            <div class="hidden md:flex gap-10 font-display text-xs font-bold tracking-[0.2em] uppercase text-white/70">
+                <a href="#architect" class="hover:text-accent-cyan transition-colors">Architect</a>
+                <a href="#philosophy" class="hover:text-accent-purple transition-colors">Philosophy</a>
+                <a href="#ventures" class="hover:text-accent-magenta transition-colors">Ventures</a>
+                <a href="#timeline" class="hover:text-white transition-colors">Timeline</a>
             </div>
+            <a href="https://wa.me/919446071043" target="_blank" class="font-display text-xs font-bold tracking-widest uppercase flex items-center gap-2 bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/30 px-6 py-3 rounded-full backdrop-blur-md hover:bg-[#25D366] hover:text-black transition-all">
+                <i data-lucide="phone" class="w-4 h-4"></i> Collaborate
+            </a>
         </div>
     </nav>
 
-    <section class="wrapper">
+    <main>
+        <!-- 1. CINEMATIC HERO -->
+        <section class="relative h-screen flex flex-col items-center justify-center text-center px-4">
+            <div class="z-10 w-full">
+                <p class="hero-anim text-xs md:text-sm font-display font-bold tracking-[0.5em] uppercase text-accent-cyan mb-8">
+                    Founder • Tech Entrepreneur • CEO
+                </p>
+                <h1 class="hero-anim font-display font-black text-[15vw] md:text-[10vw] leading-[0.8] tracking-tighter mb-8 text-glow uppercase">
+                    JOHAN <br><span class="gradient-text">JOMET</span>
+                </h1>
+                <p class="hero-anim max-w-2xl mx-auto text-lg md:text-xl text-white/60 font-light mb-12">
+                    Architecting intelligent software, bridging physical reality with code, and revolutionizing global education from Kerala, India.
+                </p>
+                
+                <div class="hero-anim max-w-2xl mx-auto flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="https://wa.me/919446071043?text=Hi%20Johan,%20let's%20collaborate." target="_blank" class="btn-cinematic btn-whatsapp text-lg w-full sm:w-auto">
+                        <i data-lucide="phone" class="w-6 h-6 mr-3"></i> WhatsApp Me
+                    </a>
+                    <a href="#architect" class="btn-cinematic text-lg w-full sm:w-auto">
+                        Enter World
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <div class="container">
+        <!-- 2. TYPOGRAPHIC MANIFESTO (Video-like Scrubbing) -->
+        <section class="min-h-screen flex items-center justify-center px-6 py-32 bg-black/40 backdrop-blur-sm border-y border-white/10">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 id="manifesto-text" class="scrub-text font-display font-black text-4xl md:text-6xl lg:text-7xl leading-tight tracking-tighter uppercase">
+                    I do not just use technology. I shape it. I build with a bigger purpose than code. I am not here to follow the old path. I am here to build a better one.
+                </h2>
+            </div>
+        </section>
 
-            <div id="scene" class="scene" data-hover-only="false">
-
-
-                <div class="circle" data-depth="1.2"></div>
-
-                <div class="one" data-depth="0.9">
-                    <div class="content">
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                        <span class="piece"></span>
+        <!-- 3. THE ARCHITECT (Full Color & Round Image) -->
+        <section id="architect" class="relative py-32 px-6">
+            <div class="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-20 items-center">
+                
+                <!-- Full Color 3D Image Card (Now Round) -->
+                <div class="gs-fade tilt-card-wrapper">
+                    <div class="tilt-card">
+                        <div class="tilt-image-container">
+                            <!-- FULL COLOR IMAGE WITH SEO ALT TEXT -->
+                            <img src="https://jjcoders.web.app/johan.png" alt="Johan Jomet - Tech Entrepreneur, CEO of JJ Coders from Kerala" onerror="this.src='https://ui-avatars.com/api/?name=Johan+Jomet&background=000&color=fff&size=1024'" />
+                            
+                            <!-- Digital HUD Overlay inside the circle -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
+                            
+                            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-center w-full" style="transform: translateZ(50px);">
+                                <div class="flex items-center justify-center gap-2 mb-2">
+                                    <div class="w-2 h-2 rounded-full bg-accent-cyan animate-pulse shadow-[0_0_10px_#00f2fe]"></div>
+                                    <span class="text-[10px] font-display tracking-[0.2em] text-accent-cyan uppercase font-bold">Entity Active</span>
+                                </div>
+                                <h3 class="font-display font-black text-3xl text-white tracking-tighter uppercase">The Architect</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="two" data-depth="0.60">
-                    <div class="content">
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                        <span class="piece"></span>
+                <!-- High-Impact Data Points with SEO Keywords -->
+                <div class="space-y-8">
+                    <div class="gs-fade">
+                        <h2 class="font-display font-black text-6xl md:text-8xl tracking-tighter mb-4 uppercase">Who is <br><span class="text-white/50 text-4xl md:text-6xl">Johan Jomet?</span></h2>
+                        <p class="text-2xl font-light text-white/70 leading-relaxed">
+                            Born April 2013 in Kerala, India. A young tech entrepreneur, thinker, and builder architecting the digital infrastructure for tomorrow. <strong class="text-white">The future belongs to builders.</strong>
+                        </p>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6 pt-8">
+                        <div class="gs-fade bento-item !p-8">
+                            <i data-lucide="brain-circuit" class="w-10 h-10 text-accent-cyan mb-4"></i>
+                            <h4 class="font-display font-bold text-2xl uppercase mb-2">AI Systems</h4>
+                            <p class="text-white/50">Building intelligent, self-sustaining software architectures.</p>
+                        </div>
+                        <div class="gs-fade bento-item !p-8">
+                            <i data-lucide="bot" class="w-10 h-10 text-accent-magenta mb-4"></i>
+                            <h4 class="font-display font-bold text-2xl uppercase mb-2">Robotics</h4>
+                            <p class="text-white/50">Bridging digital code with physical, mechanical reality.</p>
+                        </div>
+                        <div class="gs-fade bento-item !p-8">
+                            <i data-lucide="graduation-cap" class="w-10 h-10 text-accent-purple mb-4"></i>
+                            <h4 class="font-display font-bold text-2xl uppercase mb-2">EdTech</h4>
+                            <p class="text-white/50">Revolutionizing global learning systems beyond memorization.</p>
+                        </div>
+                        <div class="gs-fade bento-item !p-8 border-accent-cyan/30">
+                            <h4 class="font-display font-black text-5xl text-accent-cyan mb-2">CEO</h4>
+                            <p class="font-display text-xs tracking-widest uppercase text-white/50">JJ Coders & Beyond Mem.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="three" data-depth="0.40">
-                    <div class="content">
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                        <span class="piece"></span>
-                    </div>
-                </div>
-
-                <p class="p404" data-depth="0.50">404</p>
-                <p class="p404" data-depth="0.10">404</p>
 
             </div>
+        </section>
 
-            <div class="text">
-              <a href="https://jjcoders.web.app/">
-                <article>
-                    <p style="font-size: 19px;">You’ve pushed past the limits of our current map. Don't let your journey end here in the dark. We are creating that magic. Dare to find your way back to the launchpad!<br></p>
-                    <button>RETURN TO BASE</button>
-                </article>
-              </a>
+        <!-- 4. PHILOSOPHY & QUOTES (Infinite Marquee) -->
+        <section id="philosophy" class="py-32 overflow-hidden bg-black/60 border-y border-white/10 backdrop-blur-md">
+            <div class="max-w-[1400px] mx-auto px-6 mb-16">
+                <h2 class="gs-fade font-display font-black text-5xl md:text-7xl tracking-tighter uppercase">
+                    The <span class="gradient-text">Manifesto</span>
+                </h2>
+                <p class="gs-fade text-xl text-white/50 mt-4">Core tenets driving every project, system, and vision.</p>
             </div>
 
-        </div>
-    </section>
+            <!-- Moving Marquee -->
+            <div class="relative w-full flex overflow-hidden group">
+                <div class="marquee-container group-hover:[animation-play-state:paused]">
+                    
+                    <!-- Quote Set 1 -->
+                    <div class="quote-card">
+                        <i data-lucide="quote" class="text-accent-cyan w-8 h-8 mb-4 opacity-50"></i>
+                        <p class="font-display font-bold text-2xl leading-snug">"Real understanding matters more than memorization."</p>
+                    </div>
+                    <div class="quote-card">
+                        <i data-lucide="quote" class="text-accent-magenta w-8 h-8 mb-4 opacity-50"></i>
+                        <p class="font-display font-bold text-2xl leading-snug">"I do not think success comes from simply following what everyone else does."</p>
+                    </div>
+                    <div class="quote-card">
+                        <i data-lucide="quote" class="text-accent-purple w-8 h-8 mb-4 opacity-50"></i>
+                        <p class="font-display font-bold text-2xl leading-snug">"Ideas become powerful when they are turned into action."</p>
+                    </div>
+                    <div class="quote-card">
+                        <i data-lucide="quote" class="text-white w-8 h-8 mb-4 opacity-50"></i>
+                        <p class="font-display font-bold text-2xl leading-snug">"I build because I do not want to wait for the future. I want to make it."</p>
+                    </div>
+
+                    <!-- Quote Set 2 (Duplicated for seamless loop) -->
+                    <div class="quote-card">
+                        <i data-lucide="quote" class="text-accent-cyan w-8 h-8 mb-4 opacity-50"></i>
+                        <p class="font-display font-bold text-2xl leading-snug">"Real understanding matters more than memorization."</p>
+                    </div>
+                    <div class="quote-card">
+                        <i data-lucide="quote" class="text-accent-magenta w-8 h-8 mb-4 opacity-50"></i>
+                        <p class="font-display font-bold text-2xl leading-snug">"I do not think success comes from simply following what everyone else does."</p>
+                    </div>
+                    <div class="quote-card">
+                        <i data-lucide="quote" class="text-accent-purple w-8 h-8 mb-4 opacity-50"></i>
+                        <p class="font-display font-bold text-2xl leading-snug">"Ideas become powerful when they are turned into action."</p>
+                    </div>
+                    <div class="quote-card">
+                        <i data-lucide="quote" class="text-white w-8 h-8 mb-4 opacity-50"></i>
+                        <p class="font-display font-bold text-2xl leading-snug">"I build because I do not want to wait for the future. I want to make it."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. HORIZONTAL TIMELINE (Agency Cinematic Style) -->
+        <section id="timeline" class="bg-black border-b border-white/10 overflow-hidden">
+            <div class="timeline-container" id="timeline-track">
+                
+                <!-- Panel 1 -->
+                <div class="timeline-panel">
+                    <span class="font-display text-[15vw] font-black text-white/5 absolute right-10 top-1/2 -translate-y-1/2 pointer-events-none select-none">2013</span>
+                    <div class="max-w-2xl relative z-10">
+                        <div class="w-12 h-12 rounded-full bg-accent-cyan flex items-center justify-center mb-8 shadow-[0_0_30px_#00f2fe]">
+                            <i data-lucide="zap" class="text-black"></i>
+                        </div>
+                        <h2 class="font-display font-black text-6xl md:text-8xl tracking-tighter mb-6 uppercase">Genesis</h2>
+                        <p class="text-2xl text-white/60 font-light leading-relaxed">Born in Cheenikuzhy, Kerala. The absolute beginning. The initial spark of curiosity for how the world's systems operate.</p>
+                    </div>
+                </div>
+
+                <!-- Panel 2 -->
+                <div class="timeline-panel">
+                    <span class="font-display text-[15vw] font-black text-white/5 absolute right-10 top-1/2 -translate-y-1/2 pointer-events-none select-none">CODE</span>
+                    <div class="max-w-2xl relative z-10">
+                        <div class="w-12 h-12 rounded-full bg-accent-purple flex items-center justify-center mb-8 shadow-[0_0_30px_#7000ff]">
+                            <i data-lucide="terminal" class="text-white"></i>
+                        </div>
+                        <h2 class="font-display font-black text-6xl md:text-8xl tracking-tighter mb-6 uppercase">System <br>Analysis</h2>
+                        <p class="text-2xl text-white/60 font-light leading-relaxed">Observing the world not as a fixed reality, but as an architecture waiting to be redesigned, optimized, and automated.</p>
+                    </div>
+                </div>
+
+                <!-- Panel 3 -->
+                <div class="timeline-panel">
+                    <span class="font-display text-[15vw] font-black text-white/5 absolute right-10 top-1/2 -translate-y-1/2 pointer-events-none select-none">BUILD</span>
+                    <div class="max-w-2xl relative z-10">
+                        <div class="w-12 h-12 rounded-full bg-accent-magenta flex items-center justify-center mb-8 shadow-[0_0_30px_#ff0055]">
+                            <i data-lucide="rocket" class="text-white"></i>
+                        </div>
+                        <h2 class="font-display font-black text-6xl md:text-8xl tracking-tighter mb-6 uppercase">JJ Coders</h2>
+                        <p class="text-2xl text-white/60 font-light leading-relaxed">Transitioning from theory to execution. Founding my tech agency and turning abstract ideas into functional digital reality.</p>
+                    </div>
+                </div>
+
+                <!-- Panel 4 -->
+                <div class="timeline-panel">
+                    <span class="font-display text-[15vw] font-black text-white/5 absolute right-10 top-1/2 -translate-y-1/2 pointer-events-none select-none">FUTURE</span>
+                    <div class="max-w-2xl relative z-10">
+                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-8 shadow-[0_0_30px_#ffffff]">
+                            <i data-lucide="globe-2" class="text-black"></i>
+                        </div>
+                        <h2 class="font-display font-black text-6xl md:text-8xl tracking-tighter mb-6 uppercase">Permanent <br>Impact</h2>
+                        <p class="text-2xl text-white/60 font-light leading-relaxed">Forging meaningful companies. Leaving a permanent legacy that forces the next generation of builders to think exponentially bigger.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. VENTURES (Cinematic Video-like Cards) -->
+        <section id="ventures" class="relative py-32 px-6">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="gs-fade text-center mb-20">
+                    <h2 class="font-display font-black text-6xl md:text-8xl tracking-tighter mb-6 uppercase">My <span class="gradient-text">Ventures</span></h2>
+                    <p class="text-xl text-white/50 max-w-2xl mx-auto">
+                        The primary vehicles driving my vision forward. Building useful technology and leading meaningful change.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-10">
+                    
+                    <!-- JJ Coders -->
+                    <a href="https://jjcoders.web.app" target="_blank" class="gs-fade venture-card group block" title="Visit JJ Coders, founded by Johan Jomet">
+                        <div class="venture-bg" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000');"></div>
+                        <div class="venture-overlay"></div>
+                        <div class="absolute inset-0 p-10 flex flex-col justify-end z-10">
+                            <h3 class="font-display font-black text-5xl md:text-7xl text-white mb-4 uppercase tracking-tighter">JJ Coders</h3>
+                            <p class="text-xl text-white/80 font-light max-w-md mb-8">Creative engineering, AI systems, and intelligent digital platforms. We build things that matter.</p>
+                            <div class="w-fit border border-accent-cyan text-accent-cyan font-display font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-full backdrop-blur-md group-hover:bg-accent-cyan group-hover:text-black transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(0,242,254,0.2)]">
+                                Enter Platform <i data-lucide="arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Beyond Memorization -->
+                    <a href="https://beyondmemorization.web.app" target="_blank" class="gs-fade venture-card group block" title="Join Beyond Memorization movement">
+                        <div class="venture-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000');"></div>
+                        <div class="venture-overlay"></div>
+                        <div class="absolute inset-0 p-10 flex flex-col justify-end z-10">
+                            <h3 class="font-display font-black text-5xl md:text-7xl text-white mb-4 uppercase tracking-tighter leading-none">Beyond<br>Mem.</h3>
+                            <p class="text-xl text-white/80 font-light max-w-md mb-8">A global movement saving education. Teaching minds how to build, solve, and think critically.</p>
+                            <div class="w-fit border border-accent-magenta text-accent-magenta font-display font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-full backdrop-blur-md group-hover:bg-accent-magenta group-hover:text-white transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(255,0,85,0.2)]">
+                                Join Movement <i data-lucide="arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. ULTIMATE COLLABORATION FOOTER -->
+        <footer class="relative min-h-[80vh] flex flex-col items-center justify-center px-6 border-t border-white/10 overflow-hidden bg-black/50 backdrop-blur-lg">
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-accent-cyan/20 rounded-full blur-[150px] pointer-events-none"></div>
+            
+            <div class="relative z-10 text-center w-full max-w-5xl">
+                <h2 class="gs-fade font-display font-black text-[12vw] md:text-[8vw] leading-none tracking-tighter mb-10 uppercase">
+                    LET'S <span class="gradient-text">BUILD</span>
+                </h2>
+                
+                <p class="gs-fade text-2xl md:text-3xl font-light text-white/60 mb-16">
+                    Whether it's AI, software, or revolutionizing education.
+                </p>
+                
+                <div class="gs-fade flex flex-col sm:flex-row justify-center items-center gap-8">
+                    <!-- Massive WhatsApp CTA -->
+                    <a href="https://wa.me/919446071043?text=Hi%20Johan,%20I'd%20like%20to%20collaborate." target="_blank" class="btn-cinematic btn-whatsapp text-xl md:text-2xl !px-12 !py-6 shadow-[0_0_50px_rgba(37,211,102,0.4)] w-full sm:w-auto">
+                        <i data-lucide="phone" class="w-8 h-8 mr-4"></i> WhatsApp Me
+                    </a>
+                    
+                    <a href="mailto:johanjomet@hotmail.com" class="text-white/50 hover:text-white font-display text-sm tracking-widest uppercase transition-colors border-b border-white/20 hover:border-white pb-1">
+                        or Email: johanjomet@hotmail.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="absolute bottom-10 w-full px-10 flex flex-col md:flex-row justify-between items-center text-xs font-display tracking-widest uppercase text-white/30 gap-4">
+                <p>&copy; <span id="year"></span> Johan Jomet. CEO, Entrepreneur, India.</p>
+                <div class="flex gap-8">
+                    <a href="https://jjcoders.web.app" target="_blank" class="hover:text-accent-cyan transition-colors">JJ Coders</a>
+                    <a href="https://beyondmemorization.web.app" target="_blank" class="hover:text-accent-magenta transition-colors">Beyond Mem.</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
     <script>
-              // Parallax Code
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('year').textContent = new Date().getFullYear();
+            lucide.createIcons();
+            gsap.registerPlugin(ScrollTrigger);
+
+            // 1. Hero Animation
+            gsap.fromTo(".hero-anim", 
+                { y: 50, opacity: 0 },
+                { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power4.out", delay: 0.2 }
+            );
+
+            // 2. Typographic Text Scrubbing (Manifesto)
+            const manifestoText = document.getElementById("manifesto-text");
+            const words = manifestoText.innerText.split(" ");
+            manifestoText.innerHTML = "";
+            words.forEach(word => {
+                const span = document.createElement("span");
+                span.innerText = word + " ";
+                manifestoText.appendChild(span);
+            });
+            
+            gsap.to("#manifesto-text span", {
+                scrollTrigger: {
+                    trigger: "#manifesto-text",
+                    start: "top 80%",
+                    end: "bottom 30%",
+                    scrub: 1.5 // Smoothed scrub
+                },
+                color: "#ffffff",
+                textShadow: "0 0 25px rgba(0,242,254,0.6)",
+                stagger: 0.1
+            });
+
+            // 3. Universal Fade In
+            document.querySelectorAll('.gs-fade').forEach((elem) => {
+                gsap.fromTo(elem, 
+                    { y: 50, opacity: 0 },
+                    {
+                        scrollTrigger: {
+                            trigger: elem,
+                            start: "top 85%", 
+                            toggleActions: "play none none reverse" 
+                        },
+                        y: 0, opacity: 1, duration: 1, ease: "power3.out"
+                    }
+                );
+            });
+
+            // 4. Horizontal Scroll Timeline
+            let mm = gsap.matchMedia();
+            mm.add("(min-width: 768px)", () => {
+                const track = document.getElementById("timeline-track");
+                const panels = gsap.utils.toArray(".timeline-panel");
+                
+                gsap.to(panels, {
+                    xPercent: -100 * (panels.length - 1),
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: "#timeline",
+                        pin: true,
+                        scrub: 1.5, // Smoothed horizontal scrub
+                        snap: 1 / (panels.length - 1),
+                        end: () => "+=" + track.offsetWidth
+                    }
+                });
+            });
+
+            // 5. 3D Tilt Card (Full Color, Round Image)
+            const tiltWrapper = document.querySelector('.tilt-card-wrapper');
+            const tiltCard = document.querySelector('.tilt-card');
+            if (tiltWrapper && tiltCard) {
+                tiltWrapper.addEventListener('mousemove', (e) => {
+                    const rect = tiltWrapper.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const rotateX = ((y - centerY) / centerY) * -15;
+                    const rotateY = ((x - centerX) / centerX) * 15;
+                    
+                    tiltCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                });
+                tiltWrapper.addEventListener('mouseleave', () => {
+                    tiltCard.style.transform = `rotateX(0deg) rotateY(0deg)`;
+                });
+            }
+
+            // 6. 3D WebGL Particle Engine
+            initThreeJS();
+        });
+
+        function initThreeJS() {
+            const container = document.getElementById('webgl-container');
+            const scene = new THREE.Scene();
+            scene.fog = new THREE.FogExp2(0x020005, 0.0015);
+
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 2000);
+            const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            container.appendChild(renderer.domElement);
+
+            const particleCount = 2000;
+            const geometry = new THREE.BufferGeometry();
+            const positions = new Float32Array(particleCount * 3);
+            const colors = new Float32Array(particleCount * 3);
+
+            const color1 = new THREE.Color('#00f2fe'); 
+            const color2 = new THREE.Color('#7000ff'); 
+            const color3 = new THREE.Color('#ff0055'); 
+
+            for (let i = 0; i < particleCount * 3; i += 3) {
+                positions[i] = (Math.random() - 0.5) * 1500;     
+                positions[i+1] = (Math.random() - 0.5) * 1500;   
+                positions[i+2] = (Math.random() - 1.0) * 2000;   
+
+                const rand = Math.random();
+                let mixedColor = rand < 0.4 ? color1 : (rand < 0.7 ? color2 : color3);
+
+                colors[i] = mixedColor.r; colors[i+1] = mixedColor.g; colors[i+2] = mixedColor.b;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+            const canvas = document.createElement('canvas');
+            canvas.width = 16; canvas.height = 16;
+            const ctx = canvas.getContext('2d');
+            const gradient = ctx.createRadialGradient(8, 8, 0, 8, 8, 8);
+            gradient.addColorStop(0, 'rgba(255,255,255,1)');
+            gradient.addColorStop(0.2, 'rgba(255,255,255,0.8)');
+            gradient.addColorStop(1, 'rgba(0,0,0,0)');
+            ctx.fillStyle = gradient; ctx.fillRect(0, 0, 16, 16);
+            
+            const material = new THREE.PointsMaterial({
+                size: 4, map: new THREE.CanvasTexture(canvas),
+                vertexColors: true, transparent: true,
+                blending: THREE.AdditiveBlending, depthWrite: false
+            });
+
+            const particleSystem = new THREE.Points(geometry, material);
+            scene.add(particleSystem);
+
+            let scrollY = window.scrollY;
+            window.addEventListener('scroll', () => { 
+                scrollY = window.scrollY; 
+            }, { passive: true });
+
+            const clock = new THREE.Clock();
+            let targetZ = 0, currentZ = 0;
+
+            function animate() {
+                requestAnimationFrame(animate);
+                const time = clock.getElapsedTime();
+
+                particleSystem.rotation.z = time * 0.05;
+                particleSystem.rotation.y = Math.sin(time * 0.1) * 0.05;
+
+                const maxScroll = document.body.scrollHeight - window.innerHeight;
+                const scrollProgress = maxScroll > 0 ? scrollY / maxScroll : 0;
+                
+                targetZ = -scrollProgress * 2000; 
+                // Smoother lerp factor for camera diving
+                currentZ += (targetZ - currentZ) * 0.08; 
+                
+                camera.position.z = currentZ;
+                camera.position.x = Math.sin(time * 0.5) * 5;
+                camera.position.y = Math.cos(time * 0.3) * 5;
+
+                renderer.render(scene, camera);
+            }
+            animate();
+
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+        }
     </script>
 </body>
 </html>
